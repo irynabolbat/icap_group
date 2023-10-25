@@ -1,0 +1,148 @@
+.login_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.title_box {
+  width: 500px;
+  margin-left: -15%;
+  z-index: 5
+}
+
+#box1, #box2, #box3, #box4, #box5 {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 3px;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  text-shadow: 5px 5px 8px yellow;
+}
+
+#box1:hover {
+  animation: animate1 2s ease-in-out infinite;
+}
+
+#box2:hover {
+  animation: animate2 2s ease-in-out infinite;
+}
+
+#box3:hover {
+  animation: animate1 2s ease-in-out infinite;
+}
+
+#box4:hover {
+  animation: animate2 2s ease-in-out infinite;
+}
+
+#box5:hover {
+  animation: animate1 2s ease-in-out infinite;
+}
+
+#box1 {
+  margin-left: 180px;
+}
+
+@keyframes animate1 {
+  50% {
+      color: #0056b3;
+      font-size: 12em;
+      text-shadow: 30px 30px 35px #0056b3;
+  }
+}
+
+@keyframes animate2 {
+  50% {
+      color: #0056b3;
+      font-size: 12em;
+      text-shadow: 30px 30px 35px #0056b3;
+      transform: rotateZ(360deg);
+  }
+}
+
+.login_container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.input_label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input {
+  width: 280px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.forgot_password {
+  display: block;
+  text-align: right;
+  margin-bottom: 5px;
+  color: #007BFF;
+  font-size: 14px;
+  text-decoration: none;
+
+  &:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+}
+
+.show_password {
+  font-size: 14px;
+  color: #007BFF;
+  cursor: pointer;
+
+  &:hover {
+    color: #0056b3;
+  }
+}
+
+.password_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login_btn {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 5px #0056b3;
+  }
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.valid_error {
+  color: red;
+  font-size: 14px;
+}

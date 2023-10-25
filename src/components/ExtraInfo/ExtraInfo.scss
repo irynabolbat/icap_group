@@ -1,0 +1,30 @@
+.extra_info {
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.text {
+  font-size: 18px;
+  text-align: center;
+}
+
+.image {
+  width: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    transform: rotate(360deg);
+    transition: transform 0.8s ease-in-out;
+  }
+}
